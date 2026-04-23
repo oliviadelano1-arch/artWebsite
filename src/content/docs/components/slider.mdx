@@ -1,0 +1,96 @@
+---
+title: Slider
+description: A slider allows a user to select one or more values within a range.
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/Slider.html
+---
+
+The `<input type="range">` HTML element can be used to build a slider, however it is very difficult to style cross browser. Slider helps achieve accessible sliders that can be styled as needed.
+
+<ComponentPreview name="slider-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/slider
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/slider
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/slider
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/slider
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>
+  This components uses the following components, which you also need to install:
+  - [Form (field.tsx)](../../../docs/components/form)
+</Step>
+
+<Step>Copy and paste the following code into your project: slider.tsx</Step>
+
+<ComponentSource name="slider" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Examples
+
+### Basic
+
+<ComponentPreview name="slider-demo" />
+
+### Validation
+
+#### Custom value scale
+
+<ComponentPreview name="slider-values" />
+
+#### Step values
+
+<ComponentPreview name="slider-step-values" />
+
+### Visual Options
+
+#### Vertical orientation
+
+<ComponentPreview name="slider-vertical" />
+
+#### Disabled
+
+<ComponentPreview name="slider-disabled" />

@@ -1,0 +1,83 @@
+---
+title: Dialog
+description: A dialog is an overlay shown above other content in an application.
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/Dialog.html
+---
+
+The HTML `<dialog>` element can be used to build dialogs. However, it is not yet widely supported across browsers, and building fully accessible custom dialogs from scratch is very difficult and error prone. Dialog helps achieve accessible dialogs that can be styled as needed.
+
+<ComponentPreview name="dialog-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/dialog
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/dialog
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/dialog
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/dialog
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="dialog" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+### Basic
+
+<ComponentPreview name="dialog-demo" />
+
+### Alert dialog
+
+<ComponentPreview name="dialog-alert-demo" />
+
+### Sheet
+
+<ComponentPreview name="dialog-sheet" />
+
+### Popover Dialog
+
+<ComponentPreview name="dialog-popover" />

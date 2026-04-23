@@ -1,0 +1,95 @@
+---
+title: Tabs
+description: Tabs organize content into multiple sections and allow users to navigate between them.
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/Tabs.html
+---
+
+<ComponentPreview name="tabs-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/tabs
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/tabs
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/tabs
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/tabs
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project: tabs.tsx</Step>
+
+<ComponentSource name="tabs" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Examples
+
+### Basic
+
+<ComponentPreview name="tabs-demo" />
+
+### Content
+
+#### Focus
+
+<ComponentPreview name="tabs-focus" />
+
+#### Dynamic items
+
+<ComponentPreview name="tabs-dynamic" />
+
+### Orientation
+
+<ComponentPreview name="tabs-vertical" />
+
+#### Disabled
+
+<ComponentPreview name="tabs-disabled" />
+
+#### Disabled Items
+
+<ComponentPreview name="tabs-disabled-items" />
+
+In dynamic collections, it may be more convenient to use the disabledKeys prop at the Tabs level instead of isDisabled on individual tabs. Each key in this list corresponds with the id prop passed to the Tab component, or automatically derived from the values passed to the items prop (see the [Collections](https://react-spectrum.adobe.com/react-aria/collections.html) for more details). A tab is considered disabled if its id exists in disabledKeys or if it has isDisabled.
+
+<ComponentPreview name="tabs-disabled-dynamic" />

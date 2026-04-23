@@ -1,0 +1,161 @@
+---
+title: Select
+description: A Select displays a collapsible list of options and allows a user to select one of them.
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/Select.html
+---
+
+A select can be built using the `<select>` and `<option>` HTML elements, but this is not possible to style consistently cross browser, especially the options. Select helps achieve accessible select components that can be styled as needed without compromising on high quality interactions.
+
+<ComponentPreview name="select-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/select
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/select
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/select
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/select
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>
+  This components uses the following components, which you also need to install:
+  - [Form (field.tsx)](../../../docs/components/form)
+  - [ListBox](../../../docs/components/list-box)
+  - [Popover](../../../docs/components/popover)
+
+</Step>
+
+<Step>Copy and paste the following code into your project: select.tsx</Step>
+
+<ComponentSource name="select" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Composed Components
+
+A Select uses the following components, which may also be used standalone or reused in other components.
+
+<ComponentCards>
+  <ComponentCard component="label" />
+  <ComponentCard component="button" />
+  <ComponentCard component="popover" />
+  <ComponentCard component="listbox" />
+</ComponentCards>
+
+## Reusable Wrapper - Example
+
+If you will use a Select in multiple places in your app, you can wrap all of the pieces into a reusable component. This way, the DOM structure, styling code, and other logic are defined in a single place and reused everywhere to ensure consistency.
+
+The installed file includes a reusable wrapper `JollySelect`. This wrapper serves as an excellent starting point for use throughout your codebase.
+
+<ComponentPreview name="select-reusable" />
+
+The `JollySelect` component extends the props of React Aria Select and adds:
+
+| Prop           | Type                                                                    | Default     | Description                                         |
+| -------------- | ----------------------------------------------------------------------- | ----------- | --------------------------------------------------- |
+| `label`        | `string \| undefined`                                                   | `undefined` | Label for the select                                |
+| `description`  | `string \| undefined`                                                   | `undefined` | Description text for the select                     |
+| `errorMessage` | `string \| ((validation: AriaValidationResult) => string) \| undefined` | `undefined` | Error message to display or function to generate it |
+| `items`        | `Iterable<T> \| undefined`                                              | `undefined` | Items to display in the select                      |
+| `children`     | `React.ReactNode \| ((item: T) => React.ReactNode)`                     | Required    | Content for the select options                      |
+
+You can copy this wrapper and create variations as needed for different use cases in your application. This approach promotes consistency while still allowing for flexibility in implementation.
+
+## Examples
+
+### Basic
+
+<ComponentPreview name="select-demo" />
+
+### Content
+
+Select follows the [Collection Components API](https://react-spectrum.adobe.com/react-aria/collections.html), accepting both static and dynamic collections. The examples above show static collections, which can be used when the full list of options is known ahead of time. Dynamic collections, as shown below, can be used when the options come from an external data source such as an API call, or update over time.
+
+<ComponentPreview name="select-content" />
+
+### Links
+
+<ComponentPreview name="select-links" />
+
+#### Client Side Routing
+
+The `<SelectItem>` component works with frameworks and client side routers like Next.js, Remix and React Router.
+As with other React Aria components that support links, this works via the `RouterProvider` component at the root of your app.
+See the [client side routing guide](https://react-spectrum.adobe.com/react-aria/routing.html) to learn how to set this up.
+
+### Sections
+
+#### Static
+
+<ComponentPreview name="select-sections" />
+
+#### Dynamic
+
+<ComponentPreview name="select-sections-dynamic" />
+
+### Text Slots
+
+<ComponentPreview name="select-text-slots" />
+
+### Validation
+
+<ComponentPreview name="select-validation" />
+
+#### Description
+
+<ComponentPreview name="select-description" />
+
+### Disabled
+
+A Select can be fully disabled using the isDisabled prop.
+
+<ComponentPreview name="select-disabled" />
+
+Select supports marking items as disabled using the disabledKeys prop. Each key in
+this list corresponds with the id prop passed to the ListBoxItem component, or automatically
+derived from the values passed to the items prop. See the Collections guide for more
+details.
+
+<ComponentPreview name="select-disabled-items" />

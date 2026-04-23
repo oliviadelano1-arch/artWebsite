@@ -1,0 +1,102 @@
+---
+title: Progress
+description: Progress bars show either determinate or indeterminate progress of an operation over time.
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/ProgressBar.html
+---
+
+The `<progress>` HTML element can be used to build a progress bar, however it is very difficult to style cross browser. ProgressBar helps achieve accessible progress bars and spinners that can be styled as needed.
+
+<ComponentPreview name="progress-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/progress
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/progress
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/progress
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/progress
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+<Step>
+  This components uses the following components, which you also need to install:
+  - [Form (field.tsx)](../../../docs/components/form)
+</Step>
+
+<Step>Copy and paste the following code into your project: progress.tsx</Step>
+
+<ComponentSource name="progress" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Reusable Wrapper - Example
+
+If you will use a ProgressBar in multiple places in your app, you can wrap all of the pieces into a reusable component. This way, the DOM structure, styling code, and other logic are defined in a single place and reused everywhere to ensure consistency.
+
+The installed file includes a reusable wrapper `JollyProgressBar`. This wrapper serves as an excellent starting point for use throughout your codebase.
+
+<ComponentPreview name="progressbar-reusable" />
+
+The `JollyProgressBar` component extends the props of React Aria Progress and adds:
+
+| Prop        | Type                  | Default     | Description                               |
+| ----------- | --------------------- | ----------- | ----------------------------------------- |
+| `label`     | `string \| undefined` | `undefined` | Label for the progress bar                |
+| `showValue` | `boolean`             | `true`      | Whether to display the progress bar value |
+
+You can copy this wrapper and create variations as needed for different use cases in your application. This approach promotes consistency while still allowing for flexibility in implementation.
+
+## Examples
+
+### Basic
+
+<ComponentPreview name="progress-demo" />
+
+### Labeling
+
+#### Value Formatting
+
+<ComponentPreview name="progress-value-format" />
+
+#### Custom value label
+
+<ComponentPreview name="progress-custom-format" />

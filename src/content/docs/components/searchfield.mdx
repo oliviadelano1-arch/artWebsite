@@ -1,0 +1,123 @@
+---
+title: SearchField
+description: A search field allows a user to enter and clear a search query.
+
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/SearchField.html
+---
+
+Search fields can be built with `<input type="search">`, but these can be hard to style consistently cross browser. SearchField helps achieve accessible search fields that can be styled as needed.
+
+<ComponentPreview name="searchfield-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/searchfield
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/searchfield
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/searchfield
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/searchfield
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>
+  This components uses the following components, which you also need to install:
+  - [Form (field.tsx)](../../../docs/components/form)
+</Step>
+
+<Step>
+  Copy and paste the following code into your project: searchfield.tsx
+</Step>
+
+<ComponentSource name="searchfield" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Composed Components
+
+A SearchField uses the following components, which may also be used standalone or reused in other components.
+
+<ComponentCards>
+  <ComponentCard component="label" />
+  <ComponentCard component="input" />
+  <ComponentCard component="button" />
+</ComponentCards>
+
+## Reusable Wrapper - Example
+
+If you will use a SearchField in multiple places in your app, you can wrap all of the pieces into a reusable component. This way, the DOM structure, styling code, and other logic are defined in a single place and reused everywhere to ensure consistency.
+
+The installed file includes a reusable wrapper `JollySearchField`. This wrapper serves as an excellent starting point for use throughout your codebase.
+
+<ComponentPreview name="searchfield-reusable" />
+
+The `JollySearchField` component extends the props of React Aria SearchField and adds:
+
+| Prop           | Type                                                                    | Default     | Description                                         |
+| -------------- | ----------------------------------------------------------------------- | ----------- | --------------------------------------------------- |
+| `label`        | `string \| undefined`                                                   | `undefined` | Label for the search field                          |
+| `description`  | `string \| undefined`                                                   | `undefined` | Description text for the search field               |
+| `errorMessage` | `string \| ((validation: AriaValidationResult) => string) \| undefined` | `undefined` | Error message to display or function to generate it |
+
+You can copy this wrapper and create variations as needed for different use cases in your application. This approach promotes consistency while still allowing for flexibility in implementation.
+
+## Examples
+
+### Basic
+
+<ComponentPreview name="searchfield-demo" />
+
+### Validation
+
+<ComponentPreview name="searchfield-validation" />
+
+#### Description
+
+<ComponentPreview name="searchfield-description" />
+
+### Disabled
+
+<ComponentPreview name="searchfield-disabled" />
+
+#### Read-only
+
+<ComponentPreview name="searchfield-readonly" />

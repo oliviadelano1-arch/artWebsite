@@ -1,0 +1,84 @@
+---
+title: Link
+description: A link allows a user to navigate to another page or resource within a web page or application.
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/Link.html
+---
+
+Links can be created in HTML with the `<a>` element with an href attribute. However, if the link does not have an href, and is handled client side with JavaScript instead, it will not be exposed to assistive technology properly. Link helps achieve accessible links with either native HTML elements or custom element types.
+
+The link component is unstyled unless provided with a button variant via the `variant` prop.
+
+<ComponentPreview name="link-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/link
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/link
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/link
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/link
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>
+  This components uses the following components, which you also need to install:
+  - [Button](../../../docs/components/button)
+</Step>
+
+<Step>Copy and paste the following code into your project: link.tsx</Step>
+
+<ComponentSource name="link" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Client Side Routing
+
+The `<Link>` component works with frameworks and client side routers like Next.js, Remix and React Router.
+As with other React Aria components that support links, this works via the RouterProvider component at the root of your app.
+See the [client side routing guide](https://react-spectrum.adobe.com/react-aria/routing.html) to learn how to set this up.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="link-variants" />

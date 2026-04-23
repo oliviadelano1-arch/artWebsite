@@ -1,0 +1,105 @@
+---
+title: Meter
+description: A Meter represents a quantity within a known range, or a fractional value.
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/Meter.html
+---
+
+The `<meter>` HTML element can be used to build a meter, however it is very difficult to style cross browser. Meter helps achieve accessible meters that can be styled as needed.
+
+<ComponentPreview name="meter-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/meter
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/meter
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/meter
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/meter
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>
+  This components uses the following components, which you also need to install:
+  - [Form (field.tsx)](../../../docs/components/form)
+</Step>
+
+<Step>Copy and paste the following code into your project: meter.tsx</Step>
+
+<ComponentSource name="meter" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Reusable Wrapper - Example
+
+If you will use a Meter in multiple places in your app, you can wrap all of the pieces into a reusable component. This way, the DOM structure, styling code, and other logic are defined in a single place and reused everywhere to ensure consistency.
+
+The installed file includes a reusable wrapper `JollyMeter`. This wrapper serves as an excellent starting point for use throughout your codebase.
+
+<ComponentPreview name="meter-reusable" />
+
+The `JollyMeter` component extends the props of React Aria Meter and adds:
+
+| Prop        | Type                  | Default     | Description                          |
+| ----------- | --------------------- | ----------- | ------------------------------------ |
+| `label`     | `string \| undefined` | `undefined` | Label for the meter                  |
+| `showValue` | `boolean`             | `true`      | Whether to display the meter's value |
+
+You can copy this wrapper and create variations as needed for different use cases in your application. This approach promotes consistency while still allowing for flexibility in implementation.
+
+<ComponentPreview name="meter-reusable" />
+
+## Examples
+
+### Basic
+
+<ComponentPreview name="meter-demo" />
+
+### Labeling
+
+#### Value Formatting
+
+<ComponentPreview name="meter-value-format" />
+
+#### Custom value label
+
+<ComponentPreview name="meter-custom-format" />

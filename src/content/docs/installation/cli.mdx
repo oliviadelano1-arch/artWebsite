@@ -1,0 +1,64 @@
+---
+title: CLI
+description: Use the command line to add Jolly-UI components to your application.
+---
+
+## Add components from CLI
+
+There are two ways to add components to your project using the CLI.
+
+1. Using the components URL. (Note you will need to specify the style, e.g `https://jollyui.dev/new-york/button`)
+
+2. Using the `REGISTRY_URL` environment variable.
+
+### Using the components URL (Recommended)
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/button
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/button
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/button
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/button
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+### Using the `REGISTRY_URL` environment variable
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    REGISTRY_URL=https://jollyui.dev/r npx shadcn@latest add button
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    REGISTRY_URL=https://jollyui.dev/r pnpm dlx shadcn@latest add button
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    REGISTRY_URL=https://jollyui.dev/r bunx --bun shadcn@latest add button
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    REGISTRY_URL=https://jollyui.dev/r npx shadcn@latest add button
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>

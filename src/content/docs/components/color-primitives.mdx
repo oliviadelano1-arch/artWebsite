@@ -1,0 +1,85 @@
+---
+title: Color Primitves
+description: 🚧 Primitives for color selection
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/ColorArea.html
+---
+
+<ComponentPreview name="color-picker-hex" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/color
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/color
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/color
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/color
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="color" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+### Color Area
+
+A color area allows users to adjust two channels of an RGB, HSL or HSB color value against a two-dimensional gradient background.
+
+<ComponentPreview name="color-area" />
+
+### Color Slider
+
+A color slider allows users to adjust an individual channel of a color value.
+
+<ComponentPreview name="color-slider" />
+
+### Color Swatch Picker
+
+A ColorSwatchPicker displays a list of color swatches and allows a user to select one of them.
+
+<ComponentPreview name="color-swatch-picker" />
+
+### Color Wheel
+
+A color wheel allows users to adjust the hue of an HSL or HSB color value on a circular track.
+
+<ComponentPreview name="color-wheel" />

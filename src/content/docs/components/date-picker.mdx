@@ -1,0 +1,141 @@
+---
+title: DatePicker
+description: A DatePicker combines a DateField and a Calendar popover to allow users to enter or select a date value.
+featured: true
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/DatePicker.html
+---
+
+A date picker can be built using `<input type="date">`, but this is very limited in functionality, lacking in internationalization capabilities, inconsistent between browsers, and difficult to style. DatePicker helps achieve accessible and international date and time pickers that can be styled as needed.
+
+<ComponentPreview name="datepicker-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/date-picker
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/date-picker
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/date-picker
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/date-picker
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>
+  This components uses the following components, which you also need to install:
+  - [Button](../../../docs/components/button) -
+  [Calendar](../../../docs/components/calendar) -
+  [DateField](../../../docs/components/datefield) - [Form
+  (field.tsx)](../../../docs/components/form) -
+  [Popover](../../../docs/components/popover)
+</Step>
+
+<Step>Copy and paste the following code into your project: datepicker.tsx</Step>
+
+<ComponentSource name="date-picker" />
+
+<Step>Update the import paths to match your project setup.</Step>
+s
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Composed Components
+
+A DatePicker uses the following components, which may also be used standalone or reused in other components.
+
+<ComponentCards>
+  <ComponentCard component="label" />
+  <ComponentCard component="datefield" />
+  <ComponentCard component="button" />
+  <ComponentCard component="popover" />
+  <ComponentCard component="dialog" />
+  <ComponentCard component="calendar" />
+</ComponentCards>
+
+## Reusable Wrapper - Example
+
+If you will use a DatePicker in multiple places in your app, you can wrap all of the pieces into a reusable component. This way, the DOM structure, styling code, and other logic are defined in a single place and reused everywhere to ensure consistency.
+
+The installed file includes a reusable wrapper `JollyDatePicker`. This wrapper serves as an excellent starting point for use throughout your codebase.
+
+<ComponentPreview name="datepicker-reusable" />
+
+The `JollyDatePicker` component extends the props of React Aria DatePicker and adds:
+
+| Prop           | Type                                                                    | Default     | Description                                         |
+| -------------- | ----------------------------------------------------------------------- | ----------- | --------------------------------------------------- |
+| `label`        | `string \| undefined`                                                   | `undefined` | Label for the date picker                           |
+| `description`  | `string \| undefined`                                                   | `undefined` | Description text for the date picker                |
+| `errorMessage` | `string \| ((validation: AriaValidationResult) => string) \| undefined` | `undefined` | Error message to display or function to generate it |
+
+You can copy this wrapper and create variations as needed for different use cases in your application. This approach promotes consistency while still allowing for flexibility in implementation.
+
+## Examples
+
+### Basic
+
+<ComponentPreview name="datepicker-demo" />
+
+### Values
+
+#### Timezones
+
+<ComponentPreview name="datepicker-timezone" />
+
+#### Granularity
+
+<ComponentPreview name="datepicker-granularity" />
+
+### Validation
+
+<ComponentPreview name="datepicker-validation" />
+
+#### Min/Max Dates
+
+<ComponentPreview name="datepicker-min-max" />
+
+#### Unavailable Dates
+
+<ComponentPreview name="datepicker-unavailable" />
+
+#### Custom Validation
+
+<ComponentPreview name="datepicker-custom-validation" />
+
+#### Description
+
+<ComponentPreview name="datepicker-description" />

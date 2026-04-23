@@ -1,0 +1,84 @@
+---
+title: Tooltip
+description: A tooltip displays a description of an element on hover or focus.
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/Tooltip.html
+---
+
+The HTML title attribute can be used to create a tooltip, but it cannot be styled. Custom styled tooltips can be hard to build in an accessible way. TooltipTrigger and Tooltip help build fully accessible tooltips that can be styled as needed.
+
+<ComponentPreview name="tooltip-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/tooltip
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/tooltip
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/tooltip
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/tooltip
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="tooltip" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+### Positioning
+
+#### Placement
+
+<ComponentPreview name="tooltip-position" />
+
+#### Offset and cross offset
+
+<ComponentPreview name="tooltip-offset" />
+
+<ComponentPreview name="tooltip-cross-offset" />
+
+### Disabled
+
+<ComponentPreview name="tooltip-disabled" />

@@ -1,0 +1,78 @@
+---
+title: Switch
+description: A switch allows a user to turn a setting on or off.
+component: true
+links:
+  doc: https://react-spectrum.adobe.com/react-aria/Switch.html
+---
+
+There is no native HTML element with switch styling. `<input type="checkbox">` is the closest semantically, but isn't styled or exposed to assistive technology as a switch. Switch helps achieve accessible switches that can be styled as needed.
+
+<ComponentPreview name="switch-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Copy & Paste</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+<PackageManagerTabs>
+  <PackageManagerContent value="npm">
+    ```bash
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/switch
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="pnpm">
+    ```bash
+    pnpm dlx shadcn@latest add https://jollyui.dev/[[STYLE]]/switch
+    ```
+
+  </PackageManagerContent>
+  <PackageManagerContent value="bun">
+    ```bash
+    bunx --bun shadcn@latest add https://jollyui.dev/[[STYLE]]/switch
+    ```
+  </PackageManagerContent>
+  <PackageManagerContent value="yarn">
+    ```bash 
+    npx shadcn@latest add https://jollyui.dev/[[STYLE]]/switch
+    ```
+  </PackageManagerContent>
+</PackageManagerTabs>
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="switch" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+### Basic
+
+<ComponentPreview name="switch-demo" />
+
+### Disabled
+
+<ComponentPreview name="switch-disabled" />
+
+#### Readonly
+
+<ComponentPreview name="switch-readonly" />

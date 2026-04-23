@@ -1,0 +1,86 @@
+{
+  "projectName": "jolly-ui",
+  "projectOwner": "jolbol1",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "jolbol1",
+      "name": "James Shopland",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5064896?v=4",
+      "profile": "http://jamesshopland.com",
+      "contributions": [
+        "doc",
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "GregorGabric",
+      "name": "Gregor Gabrič",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83283727?v=4",
+      "profile": "https://github.com/GregorGabric",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Lorde4Avalon",
+      "name": "Lorde",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74342663?v=4",
+      "profile": "https://github.com/Lorde4Avalon",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "nxsdev",
+      "name": "noxis",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81478127?v=4",
+      "profile": "https://github.com/nxsdev",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "saeidex",
+      "name": "EK Nayeem",
+      "avatar_url": "https://avatars.githubusercontent.com/u/112776380?v=4",
+      "profile": "https://github.com/saeidex",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "alecmev",
+      "name": "Alec Mev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2584727?v=4",
+      "profile": "https://github.com/alecmev",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "jvliwanag",
+      "name": "Jan Vincent Liwanag",
+      "avatar_url": "https://avatars.githubusercontent.com/u/211068?v=4",
+      "profile": "https://github.com/jvliwanag",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "kidonng",
+      "name": "Kid",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44045911?v=4",
+      "profile": "https://xuann.wang",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ]
+}
