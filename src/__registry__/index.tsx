@@ -3443,17 +3443,7 @@ export const Index: Record<string, any> = {
         }
       }]
     },
-    "authentication-01": {
-      name: "authentication-01",
-      type: "registry:block",
-      registryDependencies: ["button","shadcn/card","textfield","field"],
-      files: ["src/registry/new-york/block/authentication-01.tsx"],
-      component: React.lazy(() => import("@/registry/new-york/block/authentication-01.tsx")),
-      source: "src/__registry__/new-york/block/authentication-01.tsx",
-      category: "Authentication",
-      subcategory: "Login",
-      chunks: []
-    },
+
     "authentication-02": {
       name: "authentication-02",
       type: "registry:block",
@@ -6937,17 +6927,7 @@ export const Index: Record<string, any> = {
         }
       }]
     },
-    "authentication-01": {
-      name: "authentication-01",
-      type: "registry:block",
-      registryDependencies: ["button","shadcn/card","textfield","field"],
-      files: ["src/registry/default/block/authentication-01.tsx"],
-      component: React.lazy(() => import("@/registry/default/block/authentication-01.tsx")),
-      source: "src/__registry__/default/block/authentication-01.tsx",
-      category: "Authentication",
-      subcategory: "Login",
-      chunks: []
-    },
+
     "authentication-02": {
       name: "authentication-02",
       type: "registry:block",

@@ -1,11 +1,11 @@
 import HomeClient from "@/components/home/home-client"
 import { getImagesByType } from "../../../action/get-data"
-import { ImageType } from "@prisma/client"
+
 
 export default async function Main() {
-  const hero = await getImagesByType(ImageType.Hero)
-  const featured = await getImagesByType(ImageType.Featured)
-  const works = await getImagesByType(ImageType.Works)
+  const hero = await getImagesByType('Hero')
+  const featured = await getImagesByType("Featured")
+  const works = await getImagesByType("Works")
 
   return (
     <div className="container relative">

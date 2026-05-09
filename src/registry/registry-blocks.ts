@@ -21,15 +21,7 @@ export const blocks: Registry = [
     category: "Application",
     subcategory: "Dashboard",
   },
-  {
-    name: "authentication-01",
-    type: "registry:block",
-    dependencies: ["react-aria-components"],
-    registryDependencies: ["button", "shadcn/card", "textfield", "field"],
-    files: ["block/authentication-01.tsx"],
-    category: "Authentication",
-    subcategory: "Login",
-  },
+
   {
     name: "authentication-02",
     type: "registry:block",
