@@ -1,7 +1,7 @@
 import { getImagesAll } from "../../../../action/get-data-all"
-import { ImageType } from "@prisma/client"
+
 import { WorksContent } from "@/components/home/works-content"
-import Image from "next/image"
+
 
 export default async function BlocksPage() {
 const works = await getImagesAll()
