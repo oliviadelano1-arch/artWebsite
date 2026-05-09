@@ -3,28 +3,28 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const cards = [
-  {
-    src: "https://drive.google.com/uc?id=1VCl9a-uFO8k0sxod6ZDosy_JVjmW2tYl&export=download",
-    angle: "8deg",
-  },
-  {
-    src: "https://drive.google.com/uc?id=1UYf8Noj9jCH3HnAeR1QAxSgIX9wXC4z0&export=download",
-    angle: "-15deg",
-  },
-  {
-    src: "https://drive.google.com/uc?id=1J65amT_uUFOli7HZfH1QmuDqa7dSEWYB&export=download",
-    angle: "-5deg",
-  },
-  {
-    src: "https://drive.google.com/uc?id=1CxC5v8GHZlJkG7XqDy67OBsqK3qSj2di&export=download",
-    angle: "10deg",
-  },
-  {
-    src: "https://drive.google.com/uc?id=16xwO0rPFeoYgoXOcuZbT9sSDbBQ9vsTm&export=download",
-    angle: "-5deg",
-  },
-];
+// const cards = [
+//   {
+//     src: "https://drive.google.com/uc?id=1VCl9a-uFO8k0sxod6ZDosy_JVjmW2tYl&export=download",
+//     angle: "8deg",
+//   },
+//   {
+//     src: "https://drive.google.com/uc?id=1UYf8Noj9jCH3HnAeR1QAxSgIX9wXC4z0&export=download",
+//     angle: "-15deg",
+//   },
+//   {
+//     src: "https://drive.google.com/uc?id=1J65amT_uUFOli7HZfH1QmuDqa7dSEWYB&export=download",
+//     angle: "-5deg",
+//   },
+//   {
+//     src: "https://drive.google.com/uc?id=1CxC5v8GHZlJkG7XqDy67OBsqK3qSj2di&export=download",
+//     angle: "10deg",
+//   },
+//   {
+//     src: "https://drive.google.com/uc?id=16xwO0rPFeoYgoXOcuZbT9sSDbBQ9vsTm&export=download",
+//     angle: "-5deg",
+//   },
+// ];
 
 interface CustomProps {
   index: number;
@@ -49,6 +49,9 @@ const cardVariants = {
 };
 const MotionImage = motion(Image);
 export function ImagesReveal({ images }: any) {
+
+  // console.log(images[0])
+
   const cards = [
     { angle: "8deg" },
     { angle: "-15deg" },
@@ -70,7 +73,7 @@ export function ImagesReveal({ images }: any) {
       {merged.map((card:any, i:any) => (
         <MotionImage
           key={i}
-          src={card.src}
+          src={card.url}
           alt={`Card ${i + 1}`}
           fill={false} // required when using width/height instead of fill
           width={300}  // any number, real size controlled by CSS

@@ -43,3 +43,6 @@ yarn-error.log*
 
 .contentlayer
 tsconfig.tsbuildinfo
+/src/generated/prisma
+
+/src/generated/prisma

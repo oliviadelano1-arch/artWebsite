@@ -22,27 +22,17 @@ export function SiteHeader() {
             <Search />
             <ThemeCustomizer hide={true} shrink={true} />
             <Link
-              href={siteConfig.links.github}
+              href={siteConfig.links.instagram}
               target="_blank"
               variant="ghost"
               size="icon"
               rel="noreferrer"
               className="hidden sm:inline-flex"
             >
-              <Icons.gitHub className="size-4" />
+              <Icons.instagram className="size-6" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              variant="ghost"
-              size="icon"
-              rel="noreferrer"
-              className="hidden sm:inline-flex"
-            >
-              <Icons.twitter className="size-3 fill-current" />
-              <span className="sr-only">Twitter</span>
-            </Link>
+           
             <ModeToggle />
           </nav>
         </div>

@@ -134,8 +134,8 @@ export function MoreWorks({ images }: any) {
             <FlipRevealItem key={i} flipKey={work.category}>
 
               <Image
-                src={work.src}
-                alt={work.alt}
+                src={work.url}
+                alt={work.name}
                 width={400}
                 height={400}
                 className="aspect-square w-full rounded-xl object-cover shadow-md transition-transform hover:scale-[1.02] sm:rounded-2xl"

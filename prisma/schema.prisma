@@ -1,0 +1,33 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = []
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum ImageCategory {
+  Illustration
+  Painting
+  Drawing
+
+}
+
+enum ImageType {
+  Featured
+  Works
+  Hero
+}
+
+model Image {
+  id        String        @id @default(uuid()) @db.Uuid
+  name      String
+  category  ImageCategory?
+  url       String?
+  type      ImageType?
+  createdAt DateTime      @default(now())
+}
+

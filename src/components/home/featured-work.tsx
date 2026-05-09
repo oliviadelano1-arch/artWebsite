@@ -35,10 +35,12 @@ const CircularGallery = dynamic(
 // ];
 
 export function FeaturedWork({ images }:any) {
+
+  // console.log(images[0])
   
   const formattedImages = images.map((item: any) => ({
-    image: item.src,   // rename image → src
-    text: item.text ?? "", // keep text if it exists
+    image: item.url,   // rename image → src
+    text: item.name ?? "", // keep text if it exists
   }));
   
   // console.log(formattedImages)

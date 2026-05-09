@@ -1,44 +1,40 @@
 "use client"
 
-import { Link } from "react-aria-components"
+import { Wheat, Heart, Mail, Github, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 
 import { siteConfig } from "@/config/site"
+import { Footer } from "./home/modern-footer";
+import { InstagramLogoIcon } from "@radix-ui/react-icons";
 
 export function SiteFooter() {
+  const socialLinks = [
+
+    {
+      icon: <InstagramLogoIcon className="w-6 h-6" />,
+      href: "https://github.com",
+      label: "GitHub",
+    },
+
+  ];
+
+  const navLinks = [
+    { label: "Docs", href: "/" },
+    { label: "Works", href: "/" },
+
+  ];
+
+
   return (
-    <footer className="py-6 md:px-8 md:py-0">
-      <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-        <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-          Modified by{" "}
-          <Link
-            href={siteConfig.links.twitter}
-            target="_blank"
-            rel="noreferrer"
-            className="font-medium underline underline-offset-4"
-          >
-            jolbol1
-          </Link>
-          . Template by{" "}
-          <Link
-            href={"https://twitter.com/shadcn"}
-            target="_blank"
-            rel="noreferrer"
-            className="font-medium underline underline-offset-4"
-          >
-            shadcn
-          </Link>
-          . Source code{" "}
-          <Link
-            href={siteConfig.links.github}
-            target="_blank"
-            rel="noreferrer"
-            className="font-medium underline underline-offset-4"
-          >
-            GitHub
-          </Link>
-          .
-        </p>
-      </div>
-    </footer>
+ <Footer
+      brandName="Olivia Rose"
+      brandDescription="AI-powered resume builder for modern professionals. Create stunning resumes optimized for ATS systems."
+      socialLinks={socialLinks}
+      navLinks={navLinks}
+      creatorName="CB"
+      creatorUrl="https://www.caryleblondell.com/"
+     
+    />
   )
 }
+

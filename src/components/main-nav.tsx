@@ -17,12 +17,22 @@ export function MainNav() {
         href="/"
         className="flex items-center space-x-2 text-primary"
       >
-        <Icons.logo className="size-6" />
+        <Icons.logo className="size-10" />
         <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}
         </span>
       </Link>
       <nav className="flex items-center  text-sm font-medium">
+                <Link
+          variant="link"
+          href="/works"
+          className={cn(
+            "px-2",
+            pathname === "/blocks" ? "text-foreground" : "text-foreground/60"
+          )}
+        >
+          Works
+        </Link>
         <Link
           variant="link"
           href="/docs"
@@ -45,16 +55,7 @@ export function MainNav() {
         >
           Components
         </Link> */}
-        <Link
-          variant="link"
-          href="/works"
-          className={cn(
-            "px-2",
-            pathname === "/blocks" ? "text-foreground" : "text-foreground/60"
-          )}
-        >
-          Works
-        </Link>
+
         {/* <Link
           variant="link"
           href={siteConfig.links.github}
