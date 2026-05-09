@@ -1,9 +1,8 @@
 "use server";
 
-import { PrismaClient, ImageType } from "@prisma/client";
-const prisma = new PrismaClient();
+import { prisma } from "@/lib/db";
 
-export async function getImagesByType(type: ImageType) {
+export async function getImagesByType(type: any) {
   try {
     const images = await prisma.image.findMany({
       where: { type },
