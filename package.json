@@ -11,7 +11,8 @@
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
     "build:registry": "tsx --tsconfig ./src/tsconfig.scripts.json ./src/scripts/build-registry.mts && prettier --loglevel silent --write \"src/registry/**/*.{ts,tsx,mdx}\" --cache",
-    "postbuild": "next-sitemap --config next-sitemap.config.cjs"
+    "postbuild": "next-sitemap --config next-sitemap.config.cjs",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@docsearch/react": "^3.6.2",
