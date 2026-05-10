@@ -12,8 +12,8 @@ export function SiteFooter() {
 
     {
       icon: <InstagramLogoIcon className="w-6 h-6" />,
-      href: "https://github.com",
-      label: "GitHub",
+      href: "https://www.instagram.com/olivepaintings?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",  
+      label: "Instagram",
     },
 
   ];

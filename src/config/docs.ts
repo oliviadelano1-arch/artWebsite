@@ -19,16 +19,16 @@ export const docsConfig: DocsConfig = {
       title: "Works",
       href: "/works",
     },
-    {
-      title: "GitHub",
-      href: "https://github.com/jolbol1/jolly-ui",
-      external: true,
-    },
-    {
-      title: "Twitter",
-      href: "https://twitter.com/jollyshopland",
-      external: true,
-    },
+    // {
+    //   title: "GitHub",
+    //   href: "https://github.com/jolbol1/jolly-ui",
+    //   external: true,
+    // },
+    // {
+    //   title: "Twitter",
+    //   href: "https://twitter.com/jollyshopland",
+    //   external: true,
+    // },
   ],
   sidebarNav: [
     {

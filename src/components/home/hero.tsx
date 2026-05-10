@@ -143,7 +143,7 @@ export function Hero({ images }:any) {
       </div>
 
       {/* Bottom: Clients */}
-      <motion.div className="px-2 pb-4 text-center md:pb-6" variants={fadeInUp}>
+      {/* <motion.div className="px-2 pb-4 text-center md:pb-6" variants={fadeInUp}>
         <div className="mx-auto mb-3 h-px w-48 bg-neutral-200 sm:w-64" />
         <p className="text-xs font-bold uppercase tracking-widest text-foreground sm:text-sm">
           Clients Include
@@ -151,7 +151,7 @@ export function Hero({ images }:any) {
         <p className="mx-auto mt-2 max-w-xs text-[10px] uppercase tracking-wider text-muted-foreground sm:max-w-none sm:text-xs">
           Apple, Amazon, Adobe, Google, Nike, The New York Times, Lululemon, NPR
         </p>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }
