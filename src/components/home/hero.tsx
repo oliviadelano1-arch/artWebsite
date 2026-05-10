@@ -137,7 +137,7 @@ export function Hero({ images }:any) {
             className="font-heading text-5xl font-bold uppercase tracking-tight text-neutral-300 sm:hidden"
             variants={slideInLeft}
           >
-            Animator
+            Naturalist
           </motion.h2>
         </motion.div>
       </div>
