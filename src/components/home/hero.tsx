@@ -3,6 +3,13 @@
 import { motion } from "framer-motion";
 import { ImagesReveal } from "./ui/images-reveal";
 
+import { Homemade_Apple } from "next/font/google";
+
+const homemadeApple = Homemade_Apple({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -88,10 +95,13 @@ export function Hero({ images }:any) {
       <div className="flex flex-col items-center justify-center gap-8 py-8 sm:gap-8 ">
         {/* Name with letter animation */}
         <motion.h1
-          className="flex flex-wrap justify-center px-2 text-center font-heading text-5xl font-bold uppercase tracking-tight text-foreground sm:text-5xl md:text-7xl lg:text-8xl"
+          className="flex flex-wrap justify-center px-2 text-center font-heading text-5xl font-bold  tracking-tight text-foreground sm:text-5xl md:text-7xl lg:text-8xl"
           variants={scaleIn}
         >
-             {name}
+          <p className={homemadeApple.className}>
+             {/* {name} */}
+             Olivia Rose Art
+          </p>
           {/* {name.split("").map((char, i) => (
             <motion.span
               key={i}
@@ -115,13 +125,13 @@ export function Hero({ images }:any) {
         {/* Role Title - 3 lines on mobile, 2 on desktop */}
         <motion.div className="overflow-hidden text-center">
           <motion.h2
-            className="font-heading text-5xl font-bold uppercase tracking-tight text-neutral-300 sm:text-4xl md:text-6xl lg:text-9xl"
+            className="font-heading text-5xl font-bold uppercase tracking-tight text-neutral-300 sm:text-4xl md:text-6xl lg:text-8xl"
             variants={slideInLeft}
           >
             Artist,
           </motion.h2>
           <motion.h2
-            className="hidden font-heading text-5xl font-bold uppercase tracking-tight text-neutral-300 sm:block sm:text-4xl md:text-6xl lg:text-9xl"
+            className="hidden font-heading text-5xl font-bold uppercase tracking-tight text-neutral-300 sm:block sm:text-4xl md:text-6xl lg:text-8xl"
             variants={slideInRight}
           >
             Designer & Naturalist

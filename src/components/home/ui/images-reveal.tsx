@@ -80,10 +80,10 @@ export function ImagesReveal({ images }: any) {
           height={300}
           className="
         relative object-cover shadow-lg
-        -ml-8 size-24 rounded-xl
-        sm:-ml-10 sm:size-24 sm:rounded-xl
-        md:-ml-16 md:size-36 md:rounded-2xl
-        lg:-ml-20 lg:size-[14.5rem] lg:rounded-2xl
+        -ml-8 size-32 rounded-xl
+        sm:-ml-10 sm:size-32 sm:rounded-xl
+        md:-ml-16 md:size-40 md:rounded-2xl
+        lg:-ml-20 lg:size-[16.5rem] lg:rounded-2xl
       "
           custom={{ index: i, angle: card.angle }}
           initial="hidden"
